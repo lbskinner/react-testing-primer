@@ -1,8 +1,12 @@
 import React from "react";
 
-class Todo extends React.Component {
+type TodoProps = {
+  description: string;
+};
+
+class Todo extends React.Component<TodoProps> {
   render() {
-    return <div></div>;
+    return <div>{this.props.description}</div>;
   }
 }
 
